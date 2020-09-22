@@ -1,14 +1,15 @@
 import React from 'react';
 
-import logo from '../assets/crown.svg';
+import logo from '../../assets/crown.svg';
+import {Link} from "react-router-dom"
 
 const Navbar = () => {
   return (
     <div>
       <nav className='navbar navbar-expand-lg navbar-light bg-dark'>
-        <a className='navbar-brand text-white ml-5' href='...'>
+        <Link className='navbar-brand text-white ml-5' href='...'>
           <img src={logo} alt='logo'  />
-        </a>
+        </Link>
         <button
           className='navbar-toggler'
           type='button'
@@ -24,19 +25,19 @@ const Navbar = () => {
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav m-auto'>
             <li className='nav-item active '>
-              <a className='nav-link text-white ml-5' href='...'>
+              <Link className='nav-link text-white ml-5' href='...'>
                 HOME <span className='sr-only'>(current)</span>
-              </a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-link text-white ml-5' href='...'>
+              <Link className='nav-link text-white ml-5' href='...'>
                 RECIPE
-              </a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-link text-white ml-5' href='...'>
+              <Link className='nav-link text-white ml-5' href='...'>
                 CONTACT US
-              </a>
+              </Link>
             </li>
           </ul>
           <form className='form-inline my-2 my-lg-0'>

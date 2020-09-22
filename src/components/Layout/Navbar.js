@@ -1,14 +1,14 @@
 import React from 'react';
 
 import logo from '../../assets/crown.svg';
-import {Link} from "react-router-dom"
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div>
       <nav className='navbar navbar-expand-lg navbar-light bg-dark'>
-        <Link className='navbar-brand text-white ml-5' href='...'>
-          <img src={logo} alt='logo'  />
+        <Link className='navbar-brand text-white ml-5' to='/'>
+          <img src={logo} alt='logo' />
         </Link>
         <button
           className='navbar-toggler'
@@ -25,17 +25,17 @@ const Navbar = () => {
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav m-auto'>
             <li className='nav-item active '>
-              <Link className='nav-link text-white ml-5' href='...'>
+              <Link className='nav-link text-white ml-5' to='/'>
                 HOME <span className='sr-only'>(current)</span>
               </Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link text-white ml-5' href='...'>
+              <Link className='nav-link text-white ml-5' to='/recipes'>
                 RECIPE
               </Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link text-white ml-5' href='...'>
+              <Link className='nav-link text-white ml-5' to='/contact'>
                 CONTACT US
               </Link>
             </li>
@@ -47,10 +47,7 @@ const Navbar = () => {
               placeholder='Search'
               aria-label='Search'
             />
-            <button
-              className='btn btn-info my-2 my-sm-0'
-              type='submit'
-            >
+            <button className='btn btn-info my-2 my-sm-0' type='submit'>
               Search
             </button>
           </form>
